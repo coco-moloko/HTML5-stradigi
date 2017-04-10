@@ -1,9 +1,9 @@
 // hamburger menu toggle
 
-$('html').addClass('menu');
-    $(document).ready(function() {
-      $('menu').show();  // EDIT: Can also use $('html').removeClass('hidden'); 
-    });
+// $('html').addClass('menu');
+//     $(document).ready(function() {
+//       $('menu').show();  // EDIT: Can also use $('html').removeClass('hidden'); 
+//     });
 
 
 $(document).ready(function() {
