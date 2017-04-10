@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+}
+
+.containerAllImages {
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+    background-color: pink;
+}
+
+.responsive-image {
+    max-width: 18.8vw;
+    max-height: 18.8vw;
+    border-radius: 14px;
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-bottom: 0;
+}
+
+@media (min-width: 751px)  {
+    .containerAllImages {
+     width: 81%;  
+     padding-left: 1.6%;
+    }
+}
+    
+@media (min-width: 0px) and (max-width: 750px) {
+    .responsive-image {
+        max-width: 34.2vw;
+        max-height: 34.2vw;
+    }
+    
+    .containerAllImages {
+        padding-left: 2.5%;
+        padding-top: 10px;
+    }
+}
+
+/*lightbox*/
+.lightbox-opened {
+  background-color: rgba(0,0,0, 0.75);
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  overflow-y: scroll;
+  padding: 24px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+  
+.lightbox-opened:before {
+    color: #5168ae;
+    content: "x";
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    padding: 11px 14px;
+    text-transform: uppercase;
+    margin-left: 430px;
+    margin-top: 4%;
+  }
+  
+.lightbox-opened img {
+    width: 35%;
+    border: 40px solid white;
+    border-right-width: 30px;
+    border-left-width: 30px;
+    border-radius: 15px;
+    margin-top: 4%;
+  }
+
+
+/*// No Background Scroll*/
+
+.no-scroll {
+  overflow: hidden;
+}
